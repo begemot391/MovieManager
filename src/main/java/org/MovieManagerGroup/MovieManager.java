@@ -5,10 +5,10 @@ package org.MovieManagerGroup;
 public class MovieManager {
 
     private Films[] filmsList = new Films[0];
-    private int movieCount = 5;
+    private int movieCount;
 
     public MovieManager() {
-
+        this.movieCount = 5;
     }
 
     public MovieManager( int newMovieCount ) {
