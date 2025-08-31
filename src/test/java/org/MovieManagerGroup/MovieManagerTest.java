@@ -18,6 +18,17 @@ public class MovieManagerTest {
 
 
 
+
+    @Test
+    public void testEmptyList() { // Проверяем пустой массив с фильмами.
+
+
+        Films[] exp = {};
+        Films[] act = manager.getAllFilmsFromFirst();
+
+        Assertions.assertArrayEquals( exp, act);
+    }
+
     @Test
     public void testGetMovieListFromFirst() { // Получить список фильмов, начиная с первого, без ограничений.
 
